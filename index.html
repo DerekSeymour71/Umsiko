@@ -1,156 +1,536 @@
 
-<!DOCTYPE html>
+
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Umsiko is a pattern maker, fashion manufacturing boutique in New Zealand. We produce patterns, samples, and production for the fashion industry in New Zealand. We are 100% owned and operated from New Zealand. ">
-<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
-<link rel="stylesheet" href="fontawesome/css/all.css"> 
-<script src="js/createjs.min.js"></script> 
-</head>
-<body>
-       
-    <div> 
-        <div class="grid-menu">
-            <div class="home-menu"> <a href="#padding-grid-main">Home</a>  </div>
-            <div class="about-menu"> <a href="#padding-grid-about">About</a>  </div>
-            <div class="client-menu"><a href="#padding-grid-clients"> Clients</a> </div>
-            <div class="news-menu"><a href="#padding-grid-news"> Fashionista</a> </div>
-        </div>
-    </div>
-
-        <div id="padding-grid-main">
-       
-        </div>
-           
     
-    
-    <div class="container">
-    
-       
-    
-    <div id="grid-16-main">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <head>   <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168595109-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-168595109-1');
+        </script>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />  
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Iona Woolgrove, Umsiko, Pattern Making, Pattern Maker, Wellington, New Zealand, NZ">
+        <meta name="author" content="Derek Seymour">
+        <meta name="description" content="Umsiko is a pattern maker, fashion manufacturing boutique in New Zealand. We produce patterns, samples, and production for the fashion industry in New Zealand. We are 100% owned and operated from New Zealand. ">
+        <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="fontawesome/css/all.css"> 
+        <link rel="stylesheet" type="text/css" href="css/grid_test.css"> 
          
-           <div class="logo"> 
-             <iframe src="umsiko-mobile-latest.html"></iframe> 
-
-           </div>
+        <script src="js/jquery.js" asynch></script> 
+         <script src="js/umsiko.js" asynch></script> 
         
-         
-        <div class="address"> 
-           
-           <li> 
-                <div class="address-icon">
+       </head> <link rel="shortcut icon" href="images/scissor.png">
+    
+    <body>
+        <a class="top" href="#top"><i class="far fa-arrow-alt-circle-up"> </i></a> 
+        
+       <div class="grid"> <!-- header, content, footer-->
             
-                     <i class="fas fa-address-card"></i>
-                </div> 4 Angus Avenue
-           </li>
-           <li>  Berhampore</li>
-           <li>  Wellington</li>
-           <li>  New Zealand</li>
-           <li>  6023</li>
-          
-        </div>
-
-        
-        
-        <div class="phone">           
-             
-                <div class="phone-icon">
-            
-                    <i class="fas fa-phone-square-alt"></i>   027 295 8906
-                </div> 
-           </li>
-         </div>
-
-         <div class="email">
-            <li> 
-                <div class="email-icon">     
-                <i class="far fa-envelope"></i>   UmsikoNZ@gmail.com
+        <div class="header"> 
+                <div class="grid"><!-- it might be good to break this into a 5 column grid just here though-->
+                    <i class="fas fa-address-card XL color_gold left" aria-hidden="true"></i>
+                    <div class="shadows_into_light XL center">UMSIKO News</div>
+                    <div class="color_gold center">$1<br> Newtown edition</div>
                 </div>
-                      
-            </li> 
-         </div>
-      
-        
-         
-
-     
-     </div>
-    </div>     
-    <div id="padding-grid-about">
-       
-    </div>
-    <div class="container">
-        <div id="grid-about">
-            
-                    <div class="pattern-maker-info"> 
-                        <div class="Pattern-maker-icon-center">
-                            <i class="fas fa-cut"></i> Pattern Making
-                        </div> 
-                        Established in 2005, Umsiko has been proudly providing 
-                        a pattern-making service to the New Zealand fashion industry 
-                        from our headquarters in Wellington. 
- 
+                
+                <!-- start of menu bar-->
+                <div class="menu"> 
+                <div class="content_grid border">
+                    <div class="center">
+                        <a class="menu_link" href="#about"> About</a>
                     </div>
-           
-                    <div class="Pattern-maker-icon-center">
-                        <i class="fas fa-tshirt"></i> Samples
-                    </div> 
-                        <div class="pattern-maker-info"> 
-                            
-                        </div>
-                        <div class="Pattern-maker-icon-center">
-                            <i class="fas fa-cogs"></i> Production
+                    <div class="center">
+                        <a class="menu_link" href="#patterns"> Patterns </a> 
+                    </div>
+                    <div class="center">
+                        <a class="menu_link" href="#samples"> Samples </a>
+                    </div>
+                    <div class="center">
+                        <a class="menu_link" href="#production"> Production </a>
+                    </div>
+                    
+                    <div class="center">
+                        <a class="menu_link" href="#clients"> Clients </a>
+                    </div>
+                    <div></div> <!-- empty column-->
+                    <div></div> <!-- empty column-->
+                    <div></div> <!-- empty column-->
+
+                    <div class="center"> <!--center of column-->
+                        <div class="justify"><!-- with justified text-->
+                            <i class="fas fa-address-card"></i>
+                                4 Angus Avenue<br>
+                                Berhampore<br>
+                                Wellington<br>
+                                NZ<br>
+                                6023
                         </div> 
-                            <div class="pattern-maker-info"> 
+                    </div>
+
+                    <div class="center">
+                        <div class="justify">
+                            <i class="fas fa-phone-square-alt"></i> 027 295 8906<BR>
+                            <i class="fas fa-envelope-square"></i> UmsikoNZ@gmail.com
+                        </div> 
+
+                    </div>
+                    <div class="center small color_gold">
+                        Off the record, on the QT and very HUSH-HUSH!
+                    </div>  
+                    </div> 
+                </div><!-- end of content grid for menu in header-->
+  
+        </div><!--main grid header-->
+            
+        <!-- main grid content-->
+        <div class="content"> 
+                
+                
+                
+                <!-- grid within the content area-->
+                <div class="content_grid extra_line_height">
+                          
+                        <div class="animation scissors"> <iframe src="umsiko-mobile-latest.html"></iframe></div>
+                         
+                        <div class="content_grid_item_grid"> 
+                            <div class="header"> 
+                                <div id="about"> About </div>
+
+                            </div> 
+                            <div class="byline"> 
+                                 by Iona Woolgrove 
+
+                            </div>  
+                            <div class="content justify">
+                                <div><i class="fas fa-address-card"></i> 4 Angus Avenue</div>
+                                <div>  Berhampore</div>
+                                <div>  Wellington</div>
+                                <div>  New Zealand</div>
+                                <div>  6023</div>
+                                <div> <i class="fas fa-phone-square-alt"></i> 027 295 8906</div>  
+                                <div ><i class="fas fa-envelope-square"></i> UmsikoNZ@gmail.com</div>  
+                                <br>
+                                <div>   Umsiko is a fashion manufacturing boutique which specialises in pattern making, samples and production. 
+                                        Established in 2015, the company works with an enviable list of 
+                                        top fashion labels in New Zealand. 
+                                </div>
                                 
                             </div>
+                            
+                        </div> 
+                       
+                        
+                        <div class="content_grid_item_grid"> 
+                            <div class="header"> 
+                                <div id="patterns"> Patterns 101 </div> 
+
+                            </div> 
+                            <div class="byline"> 
+                                 by Sid Hudgens 
+
+                            </div>  
+                            <div class="content justify">
+                                <img src="images/make-it-funky.png">The making of industrial patterns begins with an 
+                                existing block pattern that most closely resembles the designer's vision. 
+                                Patterns are cut of oak tag (manila folder) paper,
+                                punched with a hole and stored by hanging with a special hook. 
+                                
+                            </div>
+                            <button class="Btn_Read_More"> Show More </button>
+                        </div> 
+                        
+                        <div class="content_grid_item_grid more"> 
+                            <div class="header"> 
+                                Patterns pt 2
+                            </div> 
+                            <div class="byline"> 
+                                by Lynn Bracken
+
+                           </div>  
+                             
+                            <div class="content justify">
+                                The pattern is first checked for accuracy, then it is cut out of sample fabrics and the resulting garment is fit-tested. 
+                                Once the pattern meets the designer's approval,  a small production run of selling samples is made and 
+                                the style is presented to buyers in wholesale markets. <br> 
+                                If the style has demonstrated sales potential, the pattern is graded for sizes, usually by computer with an apparel industry specific CAD program. <br>
+                                
+                                 
+                            </div>
+                            <button class="Btn_Read_More"> Show More </button>
+                             
+                             
+                        </div> 
+                        <div class="content_grid_item_grid more"> 
+                            <div class="header"> 
+                                Patterns pt 3                            </div> 
+                            <div class="byline"> 
+                                by Wendell "Bud" White
+
+                           </div>  
+                             
+                            <div class="content justify">
+                                Following grading, the pattern must be vetted; the accuracy of each size and the direct comparison in laying seam lines is done. 
+                                After these steps have been followed and any errors corrected, the pattern is approved for production. 
+                                When the manufacturing company is ready to manufacture the style, all of the sizes of each given pattern piece are arranged into a marker, usually by computer. 
+                                   
+                            </div>
+                            <button class="Btn_Read_More"> Show More </button> 
+                             
+                        </div> 
+                        
+                        <div class="content_grid_item_grid more"> 
+                            <div class="header"> 
+                                Patterns pt 4
+                            </div> 
+                            <div class="byline"> 
+                                by "WellyWood" Jack Vincennes
+
+                           </div>  
+                             
+                            <div class="content justify">
+                                A marker is an arrangement of all of the pattern pieces over the area of the fabric to be cut that minimizes fabric waste while maintaining the desired grainlines. 
+                                It's sort of like a pattern of patterns from which all pieces will be cut. 
+                                The marker is then laid on top of the layers of fabric and cut. 
+                                Commercial markers often include multiple sets of patterns for popular sizes. 
+                                For example: one set of size Small, two sets of size Medium and one set of size Large. 
+                                Once the style has been sold and delivered to stores – and if it proves to be quite popular – 
+                                the pattern of this style will itself become a block, 
+                                with subsequent generations of patterns developed from it.
+                                
+                            </div>
+                            
+                            <div class="footer">
+                                <a href="https://en.wikipedia.org/wiki/Pattern_(sewing)">Source : Wikipedia</a>
+                            </div>
+                             
+                        </div> 
+                        <div class="content_grid_item_grid"> 
+                            <div class="header"> 
+                                <div id="samples">Samples </div> 
+
+                            </div> 
+                            <div class="byline"> 
+                                 by Wendell "Bud" White
+
+                            </div>  
+                            <div class="content justify">
+                                From our headquarters in down town Wellington, we have amassed hundreds if not thousands of pattern samples.
+                                We are constantly refining our process and there's a good chance we've already created something you need, and if not our team of dedicated
+                                specialists will be onto that, pronto!
+                            </div>
                            
+                        </div>    
+                          
+                        <div class="content_grid_item_grid"> 
+                            <div class="header"> 
+                                <div id="production"> Production </div> 
+
+                            </div> 
+                            <div class="byline"> 
+                                 by Wendell "Bud" White
+
+                            </div>  
+                            <div class="content justify">
+                                <img src="images/patterns.jpg"> We have over the years cultivated a close-relationship with various manufacturing bases in New Zealand.
+                            </div>
+                           
+                        </div>     
+
+                        <div class="content_grid_item_grid"> 
+                            <div class="header"> 
+                                <div id="clients"> Clients </div> 
+
+                            </div> 
+                            <div class="byline"> 
+                                 by Ed Exley
+
+                            </div>  
+                            <div class="content justify">
+                                <div class="animation clients"> <iframe src="clients.html"></iframe></div>
+                            </div>
+                           
+                        </div>   
+                        
+                        <div class="content_grid_item_grid"> 
+                            <div class="header"> 
+                               
+
+                            </div> 
+                            <div class="byline"> 
+                               
+
+                            </div>  
+                            <div class="content justify">
+                                We work with some of New Zealand's top fashion labels, and also work with customers who would like custom one off garments manufactured. 
+                                If you work with us, and would like your work presented here, please get in touch! We're kinda busy, but if you're missing, it's nothing personal!<br>
+                                We're working on it!!!
+                            </div>
+                            
+                        </div> 
+
+                        <div class="center"> Clients
+                    
+                            <div class="thumbnail_grid ">
+                                    <div class="thumbnail_item border"> 
+                                        <div class="header">twenty seven names</div>
+                                        <div class="content"><img src="images/twenty-seven-names.jpg"></div>
+                                        <div class="footer">
+                                            <a href="https://www.facebook.com/twenty.seven.names/"> <i class="fab fa-facebook-square"></i> </a>
+                                            <a href="https://www.twentysevennames.co.nz/collections/all"> <i class="fas fa-shopping-cart"></i> </a>
+                                        </div> 
+                                    </div>
+                                  
+                                    <div class="thumbnail_item border"> 
+                                        <div class="header">Bridget Mathewson</div>
+                                        <div class="content"><img src="images/bridget.jpg"></div>
+                                        <div class="footer">
+                                            <a href="https://www.facebook.com/bridgetmathewsondesign/"> <i class="fab fa-facebook-square"></i> </a>  
+                                            <a href="https://www.bridgetmathewson.co.nz/"> <i class="fas fa-shopping-cart"></i> </a>
+                                        </div>  
+                                    </div>
+            
+                                    
+                            
+                            </div>  <!--clients grid and thumbnails-->          
+                        </div>
+                        <div class="center"> Clients
+                    
+                            <div class="thumbnail_grid ">
+                                <div class="thumbnail_item border"> 
+                                    <div class="header">Arrow Uniforms</div>
+                                    <div class="content"><img src="images/arrow.jpg"></div>
+                                    <div class="footer">
+                                        <a href="https://www.facebook.com/arrowuniforms/"> <i class="fab fa-facebook-square"></i> </a>  
+                                        <a href="https://shop.arrowuniforms.co.nz/"> <i class="fas fa-shopping-cart"></i> </a>
+                                    </div>  
+                                </div>     
+                                <div class="thumbnail_item border"> 
+                                    <div class="header">17 Blonde</div>
+                                    <div class="content"><img src="images/17blonde.jpg"></div>
+                                    <div class="footer"><a href="https://www.facebook.com/17blondelinen/"> <i class="fab fa-facebook-square"></i> </a> 
+                                        <a href="https://www.17blonde.co.nz/shop/"> <i class="fas fa-shopping-cart"></i> </a>
+                                    </div> 
+                                </div>  
+                              
+                            
+                            </div>  <!--clients grid and thumbnails-->          
+                        </div>
+                        <div class="center"> Clients
+                    
+                            <div class="thumbnail_grid ">
+                                <div class="thumbnail_item border"> 
+                                    <div class="header">J'Ake Studios</div>
+                                    <div class="content"><img src="images/jake.jpg"></div>
+                                    <div class="footer">
+                                        <a href="https://www.facebook.com/jakestudiosnz/"> <i class="fab fa-facebook-square"></i> </a> 
+                                        <a href="https://jakestudios.co.nz/collections/all"> <i class="fas fa-shopping-cart"></i> </a>
+                                    </div> 
+                                </div>     
+                                <div class="thumbnail_item border"> 
+                                    <div class="header">Herriot</div>
+                                    <div class="content"><img src="images/herriot.png"></div>
+                                    <div class="footer">
+                                        <a href="https://www.facebook.com/herriotclothing/"> <i class="fab fa-facebook-square"></i> </a>  
+                                        <a href="https://herriot.co.nz/collections"> <i class="fas fa-shopping-cart"></i> </a>
+                                    </div> 
+                                </div>  
+                                    
+                            
+                            </div>  <!--clients grid and thumbnails-->          
+                        </div>
+                        <div class="center"> Clients
+                    
+                            <div class="thumbnail_grid ">
+                                <div class="thumbnail_item border"> 
+                                    <div class="header">Little Yellow Bird</div>
+                                    <div class="content"><img src="images/yellow_bird.jpg"></div>
+                                    <div class="footer">
+                                        <a href="https://www.facebook.com/littleyellowbirdnz/"> <i class="fab fa-facebook-square"></i> </a> 
+                                        <a href="https://www.littleyellowbird.co.nz/collections/all"> <i class="fas fa-shopping-cart"></i> </a> 
+                                    </div> 
+                                </div>     
+                                <div class="thumbnail_item border">  
+                                    <div class="header">Havilah</div>
+                                    <div class="content"><img src="images/havilah.jpg"></div>
+                                    <div class="footer">
+                                        <a href="https://www.facebook.com/Havilah.label/"> <i class="fab fa-facebook-square"></i> </a>  
+                                        <a href="https://havilahlabel.com/"> <i class="fas fa-shopping-cart"></i> </a> 
+                                    </div> 
+                                </div>   
+                            
+                            </div>  <!--clients grid and thumbnails-->          
+                        </div>
+                        <div class="center"> Clients  
+                    
+                            <div class="thumbnail_grid ">
+                                <div class="thumbnail_item border"> 
+                                    <div class="header">Bouyline</div>
+                                    <div class="content"><img src="images/boyline.png"></div>
+                                    <div class="footer">
+                                        <a href="https://www.facebook.com/buoyline"> <i class="fab fa-facebook-square"></i> </a>  
+                                        <a href="https://www.buoyline.co.nz/shop/"> <i class="fas fa-shopping-cart"></i> </a> 
+                                    </div> 
+                                </div>     
+                                <div class="thumbnail_item border"> 
+                                    <div class="header">House of Boom</div> 
+                                    <div class="content"><img src="images/house of boom.png"></div>
+                                    <div class="footer">
+                                        <a href="https://www.facebook.com/boomhouseNZ"> <i class="fab fa-facebook-square"></i> </a>  
+                                        <a href=" https://houseofboom.co.nz/collections/all"> <i class="fas fa-shopping-cart"></i> </a> 
+                                    </div> 
+                                </div>   
+                            
+                            </div>  <!--clients grid and thumbnails-->          
+                        </div>
+
+                        
+                            
+                         <div class="content_grid_item_grid"> 
+
+                        </div>
+                        
+                          
+                            <div class="content_grid_item_grid"> 
+                                <div class="header"> 
+                                    <a href= "https://www.buoyline.co.nz/">Bouyline</a> 
+                        
+                                </div> 
+                                <div class="byline"> 
+                                     by Wendell "Bud" White
+                        
+                                </div>  
+                                <div class="content justify">
+                                    In our weekly episode of Focus on Fashion, we take a look at newcomers to the fashion scene, Bouyline, who are making a splash
+                                    with their fabulous collection of rowing accessories.<br>
+                        
+                                  
+                                </div>
+                                <button class="Btn_Read_More"> Show More </button> 
+                                
+                            </div>  
+                            <div class="content_grid_item_grid more"> 
+                                <div class="header"> 
+                                    <a href= "https://www.buoyline.co.nz/">Beanies!</a> 
+                        
+                                </div> 
+                                <div class="byline"> 
+                                     by Wendell "Bud" White
+                        
+                                </div>  
+                                <div class="content justify">
+                                   
+                                    When it comes to beanies, you might say they're not meanines when it comes to providing excellent no-holds barred, magnificence.
+                                    
+                                    Mwah!
+                        
+                                    In fact, you could say they've beanine there and done it!
+                         
+                        
+                                </div>
+                                <button class="Btn_Read_More"> Show More </button> 
+                                
+                            </div>  
+                            <div class="content_grid_item_grid more"> 
+                                <div class="header"> 
+                                    <a href= "https://www.buoyline.co.nz/">Action & Adventure!</a> 
+                        
+                                </div> 
+                                <div class="byline"> 
+                                     by Wendell "Bud" White
+                        
+                                </div>  
+                                <div class="content justify">
+                                    
+                                    All around the world, there are communities of athletes and adventurers that are keen to push themselves to the limit, even when the weather doesn’t agree.
+                        
+                                    
+                        
+                                </div>
+                                <button class="Btn_Read_More"> Show More </button> 
+                                
+                            </div>  
+
+                            <div class="content_grid_item_grid more"> 
+                                <div class="header"> 
+                                    <a href= "https://www.buoyline.co.nz/">Ethical! 100% NZ</a> 
+                        
+                                </div> 
+                                <div class="byline"> 
+                                     by Wendell "Bud" White
+                        
+                                </div>  
+                                <div class="content justify">
+                                    
+                                    
+                                    At Bouyline, they believe that adventure should be accessible in any element or season. 
+                        
+                                    With a determination to take on the outdoors, they have created ethically produced, New Zealand merino clothing, designed for everyone who enjoys an active lifestyle.
+                        
+                                    So what are you waiting for? Get your groove on and head on over to check them out. Like NOW!
+                        
+                                </div>
+                               
+                                
+                            </div>  
+                            
+                           
+                           
+                            <div class="thumbnail_grid ">
+                                <div class="thumbnail_item border"> 
+                                    <div class="header">Beanies</div>
+                                    <div class="content"><img src="images/boyline beanie.png"></div>
+                                    <div class="footer">
+                                        <a href="https://www.facebook.com/buoyline"> <i class="fab fa-facebook-square"></i> </a>  
+                                        <a href="https://www.buoyline.co.nz/shop/"> <i class="fas fa-shopping-cart"></i> </a> 
+                                    </div> 
+                                </div>     
+                                <div class="thumbnail_item border"> 
+                                    <div class="header">Headbands</div>
+                                    <div class="content"><img src="images/boyline headbands.png"></div>
+                                    <div class="footer">
+                                        <a href="https://www.facebook.com/buoyline"> <i class="fab fa-facebook-square"></i> </a>  
+                                        <a href="https://www.buoyline.co.nz/shop/"> <i class="fas fa-shopping-cart"></i> </a> 
+                                    </div> 
+                                </div>      
+                            
+                            </div>  <!--clients grid and thumbnails-->     
+                       
+                        
+                         
+                        
+                        
+                </div> <!-- end of grid within the content area-->
                 
-             
-           
-           
-            </div>
-          
-           
-         
-    </div>
-      
-    <div id="padding-grid-clients">
-       
-    </div>
-    
-    <div id="grid-clients">
-         
-           <div class="umsiko-clients"> 
-             <iframe src="clients.html"></iframe> 
-
-           </div>
-         
-     
-     </div>
-    </div>  
-
-    <div id="padding-grid-news">
-       
-    </div>
-    <div id="grid-news">
-         
-        <div class="umsiko-news"> 
-          <iframe src="news.html"></iframe> 
-
+               
         </div>
+        <!-- end of main grid content-->    
+                 
+        
+        <div class="footer">
+            www.SqueezeMyLizard.com &copy; 2020 | Made in Auckland, New Zealand.   
+        </div>
+
+            
+        </div> <!--end of main grid header, content, footer-->    
+
+            
       
-  
-  </div>
- </div>  
 
 
-    <div id="padding-grid-footer">
-       Copyright 2020 www.SqueezeMyLizard.com. 
-    </div>
-     
-</body>
+    </body>
+
+    <footer>
+
+    </footer>
+
 </html>
+
+ 
